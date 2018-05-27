@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;"/>
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: navigator.language}
+</script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
+<script>
+function _GET(name){
+    var url   = window.location.search.replace("?", "");
+    var itens = url.split("§");
+
+    for(n in itens){
+        if(itens[n].match(name)){
+            return decodeURIComponent(itens[n].replace(name+"=", ""));
+        }
+    }
+}
+</script>
+<style>
+body {
+    background: #eeeeee;
+}
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/" + navigator.language + "/sdk.js#xfbml=1&appId=120074938094976&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>document.write("<div class='fb-like' data-href='http://" + _GET('url') + "' data-layout='standard' data-action='like' data-show-faces='true' data-share='true'></div><br>");</script>
+<script>document.write("<a class='twitter-share-button' href='https://twitter.com/share' data-url='http://" + _GET('url') + "'> Tweet </a><br><br>");</script>
+<script>document.write("<div class='g-plusone' data-annotation='inline' data-width='300' data-href='http://" + _GET('url') + "'>");</script>
+</body>
+</html>

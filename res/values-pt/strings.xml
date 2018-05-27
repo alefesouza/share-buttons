@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="go">Ir</string>
+
+    <string name="alert">Não foi possível encontrar a URL, deseja edita-la?</string>
+    <string name="url">Digite a URL</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string name="needinternet">Você precisa estar conectado à internet</string>
+</resources>

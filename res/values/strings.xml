@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Share Buttons</string>
+
+    <string name="url">URL</string>
+    <string name="go">Go</string>
+
+    <string name="alert">The app could not find the URL, do you want do type it?</string>
+    <string name="url">Type the URL</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="needinternet">You must be connected to internet</string>
+</resources>
